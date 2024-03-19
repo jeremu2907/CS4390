@@ -52,7 +52,9 @@ def run():
     topo = NetworkTopo()
     net = Mininet(topo=topo)
     net.start()
+
     info(net.pingAll())
+
     CLI(net)
     net.stop()
 
